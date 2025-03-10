@@ -1,0 +1,21 @@
+{
+    "routes": [
+      {
+        "src": "/CSS/(.*)",
+        "headers": {
+          "Content-Type": "text/css"
+        }
+      },
+      {
+        "src": "/JS/(.*)",
+        "headers": {
+          "Content-Type": "text/js"
+        }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html",
+        "status": 200
+      }
+    ]
+  }
